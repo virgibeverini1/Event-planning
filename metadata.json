@@ -1,0 +1,7 @@
+{
+  "name": "Elegance Events Planner",
+  "description": "A high-end event management suite for location scouting, guest coordination, client communication, and team tracking with a refined pastel aesthetic.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}

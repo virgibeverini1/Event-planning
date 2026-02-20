@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
-import { INITIAL_GUESTS } from '../constants';
-import { Guest } from '../types';
+import { INITIAL_GUESTS } from '../constants.tsx';
+import { Guest } from '../types.ts';
 
 const GuestList: React.FC = () => {
   const [guests, setGuests] = useState<Guest[]>(INITIAL_GUESTS);

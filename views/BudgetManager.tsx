@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
-import { INITIAL_BUDGET } from '../constants';
-import { BudgetItem } from '../types';
+import { INITIAL_BUDGET } from '../constants.tsx';
+import { BudgetItem } from '../types.ts';
 
 const BudgetManager: React.FC = () => {
   const [budget, setBudget] = useState<BudgetItem[]>(INITIAL_BUDGET);

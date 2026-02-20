@@ -1,13 +1,13 @@
 
 import React, { useState } from 'react';
-import Layout from './components/Layout';
-import LocationScouting from './views/LocationScouting';
-import GuestList from './views/GuestList';
-import TeamTracker from './views/TeamTracker';
-import ChatWithClient from './views/ChatWithClient';
-import CatalogSection from './views/CatalogSection';
-import BudgetManager from './views/BudgetManager';
-import { AppSection } from './types';
+import Layout from './components/Layout.tsx';
+import LocationScouting from './views/LocationScouting.tsx';
+import GuestList from './views/GuestList.tsx';
+import TeamTracker from './views/TeamTracker.tsx';
+import ChatWithClient from './views/ChatWithClient.tsx';
+import CatalogSection from './views/CatalogSection.tsx';
+import BudgetManager from './views/BudgetManager.tsx';
+import { AppSection } from './types.ts';
 
 const App: React.FC = () => {
   const [activeSection, setActiveSection] = useState<AppSection>('locations');

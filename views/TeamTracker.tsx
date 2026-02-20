@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { INITIAL_TEAM } from '../constants';
+import { INITIAL_TEAM } from '../constants.tsx';
 
 const TeamTracker: React.FC = () => {
   return (

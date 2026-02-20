@@ -1,8 +1,8 @@
 
 import React, { useState, useEffect } from 'react';
-import { ChoiceItem } from '../types';
-import { INITIAL_CHOICES } from '../constants';
-import { getDecorationIdeas } from '../services/geminiService';
+import { ChoiceItem } from '../types.ts';
+import { INITIAL_CHOICES } from '../constants.tsx';
+import { getDecorationIdeas } from '../services/geminiService.ts';
 
 interface CatalogSectionProps {
   category: 'music' | 'catering' | 'theme';
@@ -80,13 +80,6 @@ const CatalogSection: React.FC<CatalogSectionProps> = ({ category, title, subtit
             </div>
           </div>
         ))}
-
-        <button className="border-2 border-dashed border-[#D7CCC8] rounded-3xl flex flex-col items-center justify-center p-8 text-[#8D6E63] hover:bg-[#F5F1EB] transition-all group">
-          <div className="w-12 h-12 rounded-full bg-[#F5F1EB] flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
-            <i className="fas fa-plus"></i>
-          </div>
-          <span className="text-sm font-bold">Add New Entry</span>
-        </button>
       </div>
 
       <div className="mt-12 bg-[#F5F1EB] p-8 rounded-3xl border border-[#D7CCC8]/50">

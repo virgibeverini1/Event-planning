@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
-import { LOCATIONS } from '../constants';
-import { Location } from '../types';
+import { LOCATIONS } from '../constants.tsx';
+import { Location } from '../types.ts';
 
 const LocationScouting: React.FC = () => {
   const [selected, setSelected] = useState<Location>(LOCATIONS[0]);
@@ -32,7 +32,6 @@ const LocationScouting: React.FC = () => {
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
         <div className="lg:col-span-2 space-y-6">
-          {/* 3D Preview Placeholder Container */}
           <div className="relative aspect-video rounded-3xl overflow-hidden shadow-2xl group border-4 border-white">
             <img 
               src={selected.previewUrl} 
@@ -49,9 +48,6 @@ const LocationScouting: React.FC = () => {
             <button className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white/20 backdrop-blur-md p-6 rounded-full text-white border border-white/40 hover:bg-white/40 transition-all">
               <i className="fas fa-play text-2xl"></i>
             </button>
-            <div className="absolute top-4 right-4 bg-white/10 backdrop-blur-md px-3 py-1 rounded-lg text-white text-xs border border-white/20">
-              HD Preview
-            </div>
           </div>
 
           <div className="bg-white p-8 rounded-3xl shadow-sm border border-[#D7CCC8]/50">

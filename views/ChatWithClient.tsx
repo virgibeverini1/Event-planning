@@ -1,6 +1,6 @@
 
 import React, { useState, useRef, useEffect } from 'react';
-import { chatWithClient } from '../services/geminiService';
+import { chatWithClient } from '../services/geminiService.ts';
 
 const ChatWithClient: React.FC = () => {
   const [messages, setMessages] = useState<{ role: 'user' | 'ai'; text: string }[]>([

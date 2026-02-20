@@ -1,5 +1,5 @@
 
-import { Location, Guest, TeamMember, ChoiceItem, BudgetItem } from './types';
+import { Location, Guest, TeamMember, ChoiceItem, BudgetItem } from './types.ts';
 
 export const LOCATIONS: Location[] = [
   {
